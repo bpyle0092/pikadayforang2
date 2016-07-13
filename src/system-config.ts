@@ -7,10 +7,18 @@
  **********************************************************************************************/
 /** Map relative paths to URLs. */
 const map: any = {
+  'pikaday': 'vendor/pikaday/pikaday.js',
+  'underscore': 'vendor/underscore/underscore.js'
 };
 
 /** User packages configuration. */
 const packages: any = {
+  'pikaday':{
+    format: 'cjs'
+  },
+  'underscore':{
+    format:'cjs'
+  }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -33,6 +41,7 @@ const barrels: string[] = [
   // App specific barrels.
   'app',
   'app/shared',
+  'app/pikaday',
   /** @cli-barrel */
 ];
 
